@@ -1,0 +1,43 @@
+/* pages/history/history.wxss */
+/* pages/words.wxss */
+page{
+  background-color: var(--cyan);
+}
+
+
+/* .list{
+ 
+} */
+.list .item{
+ padding: 20rpx 40rpx;
+ border-bottom: 1px solid #fff;
+
+}
+
+.list .item .name{
+ /* padding: 10rpx; */
+ display: flex;
+ position: relative;
+
+}
+
+.desciption{
+  margin-bottom: 20px ;
+}
+
+.icon-right{
+  position: absolute;
+  right: 0;
+ 
+}
+
+/* 返回顶部 */
+.goTop{
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  bottom: 50rpx;
+  background: rgba(0,0,0,.2);
+  right: 30rpx;
+  border-radius: 50%;
+}

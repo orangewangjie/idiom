@@ -1,0 +1,46 @@
+<!--pages/words.wxml-->
+<!-- <view class="page"> 
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}" placeholder="输入成语或包含的字吧"></mp-searchbar>
+    </view>
+</view> -->
+<cu-custom bgColor="bg-cyan" isBack="{{false}}">
+  <view slot="backText">返回</view>
+  <view slot="content">搜成语</view>
+</cu-custom>
+<view class="cu-bar bg-cyan search">
+    <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+    <view class="search-form radius">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="输入起始关键词" confirm-type="search" bindconfirm="searchByKey"></input>
+    </view>
+     <!-- <view class="action">
+      <text class="cuIcon-close"></text>
+      <text>取消</text>
+    </view> -->
+  </view>
+<view class="cu-form-group  bg-cyan light">
+    <view class="title">显示词条详情</view>
+    <switch class="cyan sm" checked bindchange="showChange"></switch>
+</view>
+  <view class="list bg-cyan radius text-lg">
+    <view  class="item" wx:key="key" wx:for="{{idiomList}}">
+    <view  class="text-bold name padding-lr radius" data-id="{{item.id}}"  bindtap="showDdetail">
+     {{item.name}}
+        <text class="cuIcon-form icon-right">
+        </text>
+    </view>
+    <view  wx:if="{{show_description}}" class="desciption padding-lr" >
+     <text>
+        【拼音】{{item.spell}}
+        【释义】{{item.content}}
+    </text>
+  
+    </view>
+    </view>
+  </view>
+  <image src='/images/toTop.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+<view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{CustomBar}}px;">
+  <view class='load-progress-bar bg-cyan light' style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
+  <view class='load-progress-spinner text-gray'></view>
+</view>

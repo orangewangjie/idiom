@@ -1,0 +1,37 @@
+/* pages/story/story.wxss */
+page{
+  background-color: var(--cyanLight);
+}
+.paragraph{
+  margin-bottom: 16rpx;
+}
+
+.change-btn{
+  width: 500rpx !important;
+}
+/* .detail{
+  width: 96%;
+  height:calc( 100vh - 20px);
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap; 
+  
+}
+view{
+  margin:10rpx 10rpx;
+}
+
+.header{
+  display: flex;
+  flex-flow: column nowrap;  
+  align-items: center;
+  font-size:20px;
+  font-weight:bold;
+  margin: 20rpx;
+}
+
+.next{
+  margin-top:50rpx;
+  background: #41b266;
+  color:#fff;
+} */

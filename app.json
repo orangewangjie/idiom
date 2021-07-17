@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/words/words",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "看一看",
+        "iconPath": "images/rotate.png",
+        "selectedIconPath": "images/rotate_active.png"
+      },
+      {
+        "pagePath": "pages/words/words",
+        "text": "查词",
+        "iconPath": "images/xuexi.png",
+        "selectedIconPath": "images/xuexi_active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "images/lishi.png",
+        "selectedIconPath": "images/lishi_active.png"
+      }
+    ]
+  }
+}

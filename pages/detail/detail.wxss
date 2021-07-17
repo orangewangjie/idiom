@@ -1,0 +1,7 @@
+/* pages/details/detail.wxss */
+page{
+  background-color: var(--cyanLight);
+}
+.paragraph{
+  margin-bottom: 16rpx;
+}

@@ -1,0 +1,29 @@
+<!--pages/details/detail.wxml-->
+<cu-custom bgColor="bg-cyan" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content"></view>
+</cu-custom>
+<view>   
+  <scroll-view  class="bg-cyan padding radius light text-lg" scroll-y="true">
+    <view class="text-center padding" style="">
+        <text class="text-bold text-center text-xl">{{title}}</text>        
+    </view>
+    <view class="paragraph"  wx:if="{{spell}}">
+      <text>【拼音】{{spell}}</text>
+    </view>
+     <view class="paragraph"  wx:if="{{meaning}}">
+      <text>【释义】{{meaning}}</text>
+    </view>
+     <view  class="paragraph" wx:if="{{origin}}">
+      <text>【出处】{{origin}}</text>
+    </view>
+     <view class="paragraph" wx:if="{{story}}">
+      <text>【典故】{{story}}</text>
+    </view>
+   <view class="paragraph" wx:if="{{example}}">
+      <text>【例句】{{example}}</text>
+    </view>
+  
+    <!-- <button class="next" bindtap="change">换一换</button> -->
+   </scroll-view>
+</view>

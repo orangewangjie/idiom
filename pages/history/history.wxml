@@ -1,0 +1,16 @@
+<!--pages/history/history.wxml-->
+<cu-custom bgColor="bg-cyan" isBack="{{false}}">
+  <view slot="backText">返回</view>
+  <view slot="content">查询历史</view>
+</cu-custom>
+  <view class="list bg-cyan radius text-lg padding">
+    <view  class="item" wx:key="key" wx:for="{{list}}">
+    <view  class="text-bold name padding-lr radius" data-name="{{item}}"  bindtap="showDdetail">
+     {{item}}
+        <text class="cuIcon-form icon-right">
+        </text>
+    </view>
+    </view>
+  </view>
+  <image src='/images/toTop.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+
